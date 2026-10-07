@@ -1,0 +1,25 @@
+name: adversarial-redteam
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - pyarrow
+  - requests
+  - openai
+
+  # PyTorch: GPU by default, still usable on CPU-only machines
+  - pytorch>=2.5.*
+  - pytorch-cuda=12.1
+
+  - pip:
+      - transformers>=4.41
+      - pyrallis
+      - accelerate
+      - bitsandbytes
+      - streamlit
+      - plotly
